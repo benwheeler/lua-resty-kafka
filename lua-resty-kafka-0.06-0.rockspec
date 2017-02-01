@@ -18,4 +18,16 @@ dependencies = {
    "lua >= 5.1, < 5.4"
 }
 build = {
+   type = "builtin",
+
+   modules = {
+      ["resty.kafka.broker"] = "lib/resty/kafka/broker.lua",
+      ["resty.kafka.client"] = "lib/resty/kafka/client.lua",
+      ["resty.kafka.errors"] = "lib/resty/kafka/errors.lua",
+      ["resty.kafka.producer"] = "lib/resty/kafka/producer.lua",
+      ["resty.kafka.request"] = "lib/resty/kafka/request.lua",
+      ["resty.kafka.request"] = "lib/resty/kafka/response.lua",
+      ["resty.kafka.ringbuffer"] = "lib/resty/kafka/ringbuffer.lua",
+      ["resty.kafka.sendbuffer"] = "lib/resty/kafka/sendbuffer.lua"
+   }
 }
